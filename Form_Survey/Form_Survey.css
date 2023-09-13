@@ -1,0 +1,108 @@
+.content{
+    display: grid;
+    grid-template-columns:48% 4% 48%;
+    
+}
+.contents{
+    border: 1px solid black;
+    padding: 20px;
+}
+.form1{
+    display: grid;
+    padding: 20px;
+    
+}
+.left-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+.submit {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+.checkout{
+    padding: 20px;
+}
+.item{
+    padding-left: 10px;
+}
+#code{
+    width: 110px;
+}
+.form2 {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.left p {
+    margin-left: 15px;
+  }
+  .right p {
+    margin-right: 15px; 
+  }
+.form2 button {
+    margin-right: 5px; 
+}
+.select_item1 {
+    background-color:lightgrey;
+    border:none;
+}
+.select_item2 {
+    background-color:lightgrey;
+    border:none;
+}
+.item input[type="text"]{
+    border:none;
+    background-color:azure;
+}
+.group .left,
+.group .right {
+  background-color:lightgrey; 
+}
+.submit button{
+    background-color: orange;
+    color:white;
+    width:100px;
+    border:none;
+  }
+
+@media only screen and (min-width:320px) and (max-width: 568px) {
+    .header{
+        font-size: 17px;
+        text-align: center;
+    }
+    .content{
+        display:block;
+        width: 95%;
+    }
+    .contents{
+        width: 100%;
+        padding-right: 0px;
+        margin-top: 20px;
+        display: block;
+        font-size: 17px;
+        
+    }
+    .form1, .form2{
+        display: block;
+        width: 100%;
+
+    }
+    .left-bottom{
+        width: 100%;
+        display: block;
+    }
+    .submit div{
+        width: 100%;
+    }
+}
+   

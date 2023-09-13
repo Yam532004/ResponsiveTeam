@@ -1,0 +1,275 @@
+*{
+    margin: auto;
+    padding: 0;
+    width: 98%;
+    list-style-type: none;
+    text-decoration: none;
+    background-color:white
+}
+p{
+    line-height: 20px;
+    width: 500px;
+}
+h1,h2{
+    line-height: 50px;
+}
+.header{
+    display: flex;
+    border-bottom: 1px solid rgb(248, 237, 237);
+    padding: 10px;
+    background-color: orange;
+    border-radius: 5px;
+}
+/* header-left */
+#logo{
+    height:60px;
+    width: 130px;
+}
+.header-left{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    padding: 5px;
+    margin-right: 400px;
+    border-radius: 20px;
+}
+.item{
+    width: 100px;   
+    text-align: center;
+    height: 30px;
+    background-color: rgb(226, 162, 110);
+    border-radius: 5px;
+}
+/* ....... */
+
+/* Header-right */
+.header-right{  
+    display: grid;
+    grid-template-columns:20% 20% 20% 20% 20% ;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+}
+.header-right li>a{
+    color: black;
+    
+}
+.header-right li>a:hover{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: orange
+}
+/* ............. */
+
+/* Body */
+.body{
+    margin: 0;
+    border-bottom: 1px solid rgb(248, 237, 237) ;
+    width: 100%;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+}
+.sub{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+}
+.submit{
+    width: 80px;
+    height: 40px;
+}   
+
+/* ....... */
+
+/* Menu */
+
+.mainmenu{
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    padding-top: 30px;
+    
+}
+.menu{
+    display: grid;
+    grid-template-columns: 20% 10% 10% 10% 10% 20% 20%;
+    font-size: 20px;
+}
+.menu li>a{
+    color: black;
+}
+
+/* ......... */
+
+.content{
+    display: grid;
+    grid-template-columns: 1% 49% 49% 1%;
+    margin-top: 30px;
+    
+}
+.content1{
+   line-height: 80px;
+   text-align: justify;
+   width: 500px;
+   
+}
+
+.images>img{
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 90%;
+    height: 450px;
+    border-radius: 80px;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    background-color:rgb(238, 162, 23);
+}
+.button:hover{
+    background-color: orange;
+}
+
+.Ending{
+    display: flex;
+    width: 10%;
+    
+}
+.menu li>a:hover{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orange
+}
+#but{
+    width: 20px;
+    margin: 0;
+    border-radius: 30%;
+}
+.butweb{
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+}
+
+@media only screen and (min-width:320px) and (max-width: 568px) {
+    .header{
+        background-color: rgb(251, 86, 49);
+        display:block;
+        width: 95%;
+    }
+    .header-left{
+        font-size: 15px;
+        margin-bottom: 5px;
+
+    }
+    .header-left>li>select{
+        background-color: rgb(39, 170, 154);
+    }
+
+    #logo{
+        width: 100%;
+        height: 45px;
+    }
+
+    .item{
+        width: 100%;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    
+    .header-right{
+        
+        
+        font-size: 14px;
+    }
+    
+    
+    .mainmenu{
+        display: block;
+    }
+    .menu {
+        font-size: 15px;
+        
+    }
+    
+    #but{
+        margin-left: 7px;
+        margin-right: 10px;
+    }
+    .sub{
+        
+        height: 10px;
+        margin-top: 10px;
+    }
+    .sub>input{
+        background-color: white;
+    }
+    
+    
+    .content{
+        background-image:url(../Image/shoppe.webp);
+        width: 100%;
+        /* height:px; */
+        display: grid;
+        grid-template-columns: 5% 85% 5%;
+    }
+    .butweb{
+        font-size: 10px;
+        
+    }
+    .content1{
+        margin: 15px;
+        width: 100%;
+        display: block;
+        overflow-wrap: break-word;
+        
+        
+    }
+    h1{
+        width: 80%;
+        font-size: 25px;
+    }
+    h2{
+        width: 80%;
+        font-size: 17px;
+        flex-wrap: wrap;
+
+    }
+    .content1>p{
+        font-size: 14px;
+        
+    }
+    p{
+        width: 80%;
+    }
+    .images{
+        height: 30px;
+    }
+    
+    .sub> input{
+       width: 265px;
+       border-radius: 0px;
+       background-color: white;
+       
+    }
+    .sub>button{
+        background-color: rgb(250, 84, 48);
+        width: 30px;
+    }
+    .sub>button>i{
+        background-color:  rgb(250, 84, 48);
+    }
+    .button{
+        background-color:rgb(250, 176, 12);
+        margin-left: 25px;
+    }
+    .images{
+        display: none;
+    }
+    
+    
+
+
+    
+}
